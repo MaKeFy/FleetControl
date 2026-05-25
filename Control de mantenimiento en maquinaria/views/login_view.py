@@ -44,12 +44,12 @@ class LoginView(QDialog):
 
         layout.addWidget(QLabel("Usuario:"))
         self.txt_usuario = QLineEdit()
-        self.txt_usuario.setPlaceholderText("admin")
+        self.txt_usuario.setPlaceholderText("Ingrese su usuario")
         layout.addWidget(self.txt_usuario)
 
         layout.addWidget(QLabel("Contrasena:"))
         self.txt_password = QLineEdit()
-        self.txt_password.setPlaceholderText("admin123")
+        self.txt_password.setPlaceholderText("Ingrese su contraseña")
         self.txt_password.setEchoMode(QLineEdit.Password)
         self.txt_password.returnPressed.connect(self.intentar_login)
         layout.addWidget(self.txt_password)
@@ -58,9 +58,6 @@ class LoginView(QDialog):
         self.btn_login.clicked.connect(self.intentar_login)
         layout.addWidget(self.btn_login)
 
-        ayuda = QLabel("Usuario inicial: admin / admin123")
-        ayuda.setStyleSheet("color: #64748b; font-weight: normal; font-size: 11px;")
-        layout.addWidget(ayuda)
 
     def intentar_login(self):
         usuario = self.txt_usuario.text().strip()

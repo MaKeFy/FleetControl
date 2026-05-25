@@ -187,7 +187,9 @@ class ReportesService:
             for i in incidencias
         ) or "<tr><td colspan='4'>Sin incidencias urgentes pendientes</td></tr>"
 
-        ancho_tabla = 720
+        ancho_tabla = 640
+        ancho_panel = 288
+        margen_panel = ancho_tabla - ancho_panel
 
         html = f"""
         <html>
@@ -205,11 +207,11 @@ class ReportesService:
             th {{ background: #f3f4f6; text-align: center; }}
             .check {{ text-align: center; }}
             .money {{ text-align: right; }}
-            .total-box {{ margin-top: 18px; margin-left: 396px; width: 324px; }}
+            .total-box {{ margin-top: 18px; margin-left: {margen_panel}px; width: {ancho_panel}px; }}
             .total-box td {{ height: 28px; }}
             .firma-wrap {{ margin-top: 60px; width: {ancho_tabla}px; border: none; }}
             .firma-wrap td {{ border: none; padding: 0; }}
-            .firma-box {{ width: 324px; margin-left: 396px; border-collapse: collapse; }}
+            .firma-box {{ width: {ancho_panel}px; margin-left: {margen_panel}px; border-collapse: collapse; }}
             .firma-box td {{ border: none; border-top: 1px solid #111827; text-align: center; padding-top: 8px; }}
           </style>
         </head>
@@ -223,13 +225,13 @@ class ReportesService:
 
           <h2>Maquinaria Asociada</h2>
           <table class="full-table" width="{ancho_tabla}">
-            <tr><th width="80">ID</th><th width="280">Unidad</th><th width="220">VIN / Serie</th><th width="140">Horómetro</th></tr>
+            <tr><th width="70">ID</th><th width="250">Unidad</th><th width="200">VIN / Serie</th><th width="120">Horómetro</th></tr>
             {maquinas_html}
           </table>
 
           <h2>Checklist del Plan</h2>
           <table class="full-table" width="{ancho_tabla}">
-            <tr><th width="45"></th><th width="315">Tarea</th><th width="260">Observaciones</th><th width="100">Costo</th></tr>
+            <tr><th width="44"></th><th width="300">Tarea</th><th width="220">Observaciones</th><th width="76">Costo</th></tr>
             {tareas_html}
           </table>
 
@@ -239,13 +241,13 @@ class ReportesService:
 
           <h2 class="urgent">Urgente: Incidencias no atendidas</h2>
           <table class="full-table" width="{ancho_tabla}">
-            <tr><th width="85">Orden</th><th width="195">Unidad</th><th width="130">Fecha</th><th width="310">Descripción</th></tr>
+            <tr><th width="75">Orden</th><th width="175">Unidad</th><th width="120">Fecha</th><th width="270">Descripción</th></tr>
             {incidencias_html}
           </table>
 
           <table class="firma-wrap" width="{ancho_tabla}">
             <tr><td>
-              <table class="firma-box" width="324">
+              <table class="firma-box" width="{ancho_panel}">
                 <tr><td>Firma / Responsable</td></tr>
               </table>
             </td></tr>
