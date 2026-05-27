@@ -10,15 +10,14 @@ env/
 
 # Build outputs
 build/
-dist/
 *.spec
 
 # Local/generated reports and backups
 *.xlsx
 *.pdf
 *.html
-*.sql
 mysql_config.txt
+dist/mysql_config.txt
 
 # IDE/editor files
 .vscode/
