@@ -138,3 +138,8 @@ Antes de ejecutar, crear `mysql_config.txt` en la raiz del proyecto con la confi
 - `dist/` se incluye para distribuir el ejecutable.
 - Los archivos `.sql` se permiten porque el respaldo incluido es una base de datos de prueba.
 - No subir credenciales personales de MySQL.
+
+## Manual de usuario.
+Para pasos más detallados acerca del uso de la aplicación, véase el Manual de Usuario - FleetControl:
+
+- https://drive.google.com/file/d/1Dl_kDqRZbYGm2QFZF6eSh3ZVGPjNvxGH/view?usp=sharing
