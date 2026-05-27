@@ -132,7 +132,11 @@ python main.py
 
 Antes de ejecutar, crear `mysql_config.txt` en la raiz del proyecto con la configuracion de MySQL.
 
-## Manual de usuario.
+## Manual de usuario y video tutorial
 Para pasos más detallados acerca del uso de la aplicación, véase el Manual de Usuario - FleetControl:
 
-- https://drive.google.com/file/d/1Dl_kDqRZbYGm2QFZF6eSh3ZVGPjNvxGH/view?usp=sharing
+  - https://drive.google.com/file/d/1Dl_kDqRZbYGm2QFZF6eSh3ZVGPjNvxGH/view?usp=sharing
+
+Igualmente siéntase libre de revisar el siguiente video explicando las funcionalidades del sistema.
+
+  - https://drive.google.com/file/d/1NQfMv4HK4YST-LPM92EERANVjqw03sP5/view?usp=sharing
