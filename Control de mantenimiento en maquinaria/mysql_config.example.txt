@@ -1,0 +1,4 @@
+host='localhost'
+user='root'
+password='CAMBIA_ESTA_CONTRASENA'
+database='mantenimiento_maquinaria'

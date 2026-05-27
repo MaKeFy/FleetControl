@@ -18,6 +18,7 @@ dist/
 *.pdf
 *.html
 *.sql
+mysql_config.txt
 
 # IDE/editor files
 .vscode/
