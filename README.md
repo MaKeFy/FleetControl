@@ -38,7 +38,6 @@ La version distribuible se encuentra en la carpeta `dist/`.
 dist/FleetControl.exe
 ```
 
-> `mysql_config.txt` no se sube al repositorio porque contiene credenciales personales de MySQL.
 
 ## Requisitos
 
