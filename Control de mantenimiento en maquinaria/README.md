@@ -78,7 +78,7 @@ mysql_config.txt
 
 Cuando se ejecuta desde codigo fuente, debe estar en la raiz de `Control de mantenimiento en maquinaria`. Cuando se ejecuta el `.exe`, debe estar junto a `FleetControl.exe` dentro de `dist/`.
 
-Formato esperado:
+Formato esperado (se recomienda utilizar un usuario con permisos en la BD en vez del usuario root):
 
 ```text
 host='localhost'
@@ -87,13 +87,27 @@ password='TU_CONTRASENA_MYSQL'
 database='mantenimiento_maquinaria'
 ```
 
-Tambien se incluye una plantilla segura:
+Tambien se incluye una plantilla:
 
 ```text
 mysql_config.example.txt
 ```
 
 ## Credenciales de aplicacion
+
+En los datos de prueba, se incluyen dos usuarios. El administrador y un usuario normal con rol de Encargado:
+
+Administrador:
+```text
+Usuario: admin
+Contraseña: A7adm.56
+```
+
+Usuario normal:
+```text
+Usuario: encargado_01
+Contraseña: E7ecr.99
+```
 
 Si la tabla `usuarios` esta vacia, la aplicacion crea automaticamente el usuario inicial:
 
@@ -118,9 +132,7 @@ python main.py
 
 Antes de ejecutar, crear `mysql_config.txt` en la raiz del proyecto con la configuracion de MySQL.
 
-## Notas de repositorio
+## Manual de usuario.
+Para pasos más detallados acerca del uso de la aplicación, véase el Manual de Usuario - FleetControl:
 
-- `venv/`, `.venv/`, `build/`, caches y `mysql_config.txt` estan ignorados.
-- `dist/` se incluye para distribuir el ejecutable.
-- Los archivos `.sql` se permiten porque el respaldo incluido es una base de datos de prueba.
-- No subir credenciales personales de MySQL.
+- https://drive.google.com/file/d/1Dl_kDqRZbYGm2QFZF6eSh3ZVGPjNvxGH/view?usp=sharing
