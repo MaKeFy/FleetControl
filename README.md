@@ -132,13 +132,6 @@ python main.py
 
 Antes de ejecutar, crear `mysql_config.txt` en la raiz del proyecto con la configuracion de MySQL.
 
-## Notas de repositorio
-
-- `venv/`, `.venv/`, `build/`, caches y `mysql_config.txt` estan ignorados.
-- `dist/` se incluye para distribuir el ejecutable.
-- Los archivos `.sql` se permiten porque el respaldo incluido es una base de datos de prueba.
-- No subir credenciales personales de MySQL.
-
 ## Manual de usuario.
 Para pasos más detallados acerca del uso de la aplicación, véase el Manual de Usuario - FleetControl:
 
